@@ -24,6 +24,12 @@ app.get('/add_user', function(req, res) {
     res.end("User added");
 })
 
+app.get('/profile', function(req, res) {
+    res.end(`
+    <h1>Albert Słotwiński</h1>
+    `)
+})
+
 const PORT = process.env.PORT || 8080;
 
 const listener = app.listen(PORT, 
